@@ -1,0 +1,13 @@
+"Measure
+Intention to Always:",Low Adherence ,Low-Medium Adherence ,Medium-High Adherence ,High Adherence 
+Wash my hands often with soap and water for at least 20 seconds.,0.04,0.38,0.93,0.95
+Wear a face cover (mask) in public,0.11,0.88,0.88,0.99
+Avoid face-touching with unwashed hands,0.00,0.00,0.62,0.85
+Cover cough and sneeze,0.22,0.77,1.00,1.00
+Stay home when ill,0.06,0.82,0.85,0.99
+Seek medical attention when have symptoms and call in advance,0.02,0.68,0.75,0.98
+Stay at least 6 feet (about 2 arms lengths) from other people when outside of my home.,0.00,0.22,0.10,0.92
+Stay out of crowded places and avoid mass gatherings > 25 people,0.02,0.46,0.23,0.92
+Tested for COVID-19 twice or more,0.76,0.81,0.84,0.81
+Group Size,13.82%,30.91%,16.49%,38.78%
+Seroprevalence,35.50%,31.20%,36.00%,25.70%

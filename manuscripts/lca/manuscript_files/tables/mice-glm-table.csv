@@ -1,0 +1,11 @@
+Covariate (response) / reference levels,aOR (multiple imputation)
+Close proximity to known COVID-19 positive individual (yes) / no,"3.41 (2.29-5.08, p<0.001)"
+Close proximity to individual showing COVID-19 symptoms (yes) / no,"0.86 (0.58-1.29, p=0.474)"
+Lives in University housing (yes) / no,"0.90 (0.55-1.47, p=0.685)"
+Latent Class (medium adherence) / low adherence,"0.73 (0.45-1.18, p=0.203)"
+Latent Class (high adherence) / low adherence,"0.59 (0.36-0.98, p=0.043)"
+Travelled in the 3 months prior to campus arrival (yes) / no,"1.12 (0.76-1.63, p=0.57)"
+Travelled since campus arrival (yes) / no,"0.87 (0.6-1.25, p=0.447)"
+Ate in a dining hall in the past 7 days (yes) / no,"1.32 (0.76-2.29, p=0.332)"
+Ate in a restaurant in the past 7 days (yes) / no,"1.14 (0.8-1.64, p=0.465)"
+Only ate in their room in the past 7 days (yes) / no,"0.87 (0.59-1.29, p=0.499)"
