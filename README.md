@@ -12,3 +12,5 @@ To run:
     - `instantiate` (to download the necessary packages)
 - Type backspace to re-enter the standard Julia REPL
 - Run the command `include("manuscripts/lca/scripts/lca-plots.jl")`
+
+To create the manuscript file, ensure you have Typst installed locally and then run `typst compile manuscripts/lca/combined-manuscript.typ` to compile the manuscript and supplemental appendix.
