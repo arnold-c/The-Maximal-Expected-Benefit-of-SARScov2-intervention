@@ -1,8 +1,8 @@
 #%%
 using DrWatson
-@quickactivate "D4A"
+@quickactivate "Data4Action"
 
-using D4A
+using Data4Action
 using Data4ActionUtils: Data4ActionUtils
 using CairoMakie
 
@@ -26,10 +26,10 @@ mkpath(supplemental_tabledir())
 #%%
 set_theme!(
     custom_theme;
-    linewidth=6,
+    linewidth = 6,
 )
 
-update_theme!(; size=(1300, 800))
+update_theme!(; size = (1300, 800))
 
 #%%
 for (
@@ -49,15 +49,15 @@ for (
 )
     lca_simulation_plots_tables(
         beta_mat_method;
-        plot_output_dir=plot_output_dir,
-        table_output_dir=table_output_dir,
-        whiskerlinewidth=6,
-        whiskerwidth=28,
-        strokewidth=2,
-        markersize=36,
-        whisker_fig_num=whisker_fig_num,
-        intervention_fig_num=intervention_fig_num,
-        fig_tag=fig_tag,
-        panel_fontsize=35,
+        plot_output_dir = plot_output_dir,
+        table_output_dir = table_output_dir,
+        whiskerlinewidth = 6,
+        whiskerwidth = 28,
+        strokewidth = 2,
+        markersize = 36,
+        whisker_fig_num = whisker_fig_num,
+        intervention_fig_num = intervention_fig_num,
+        fig_tag = fig_tag,
+        panel_fontsize = 35,
     )
 end
