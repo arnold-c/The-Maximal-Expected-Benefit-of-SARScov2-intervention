@@ -50,28 +50,28 @@
 )
 
 = Background
-Within epidemiology, the importance of heterogeneity, whether that host, population, statistical, or environmental, has long been recognized @fletcherWhatHeterogeneityIt2007@noldHeterogeneityDiseasetransmissionModeling1980@trauerImportanceHeterogeneityEpidemiology2019@zhangMonitoringRealtimeTransmission2022@lloyd-smithSuperspreadingEffectIndividual2005.
-For example, when designing targeted interventions, it is crucial to understand and account for differences that may exist within populations @woolhouseHeterogeneitiesTransmissionInfectious1997@wangHeterogeneousInterventionsReduce2021@mcdonaldImpactIndividuallevelHeterogeneity2016.
-These differences can present in a variety of forms: heterogeneity in susceptibility, transmission, response to guidance, and treatment effects etc.; all of which affect the dynamics of an infectious disease @fletcherWhatHeterogeneityIt2007@noldHeterogeneityDiseasetransmissionModeling1980@woolhouseHeterogeneitiesTransmissionInfectious1997@seveliusBarriersFacilitatorsEngagement2014@tuschhoffDetectingQuantifyingHeterogeneity2023@delaneyStrategiesAdoptedGay2022@andersonQuantifyingIndividuallevelHeterogeneity2022@macdonaldInfluenceHLASupertypes2000@elieSourceIndividualHeterogeneity2022.
-While heterogeneity may exist on a continuous spectrum, it can be difficult to incorporate into analysis and interpretation, so individuals are often placed in discrete groups according to a characteristic that aims to represent the true differences @mossongSocialContactsMixing2008@klepacContagionBBCFour2018@daviesAgedependentEffectsTransmission2020@haySerodynamicsReviewMethods2024@yangLifeCourseExposures2020.
+Within epidemiology, the importance of heterogeneity, whether that host, population, statistical, or environmental, has long been recognized @fletcherWhatHeterogeneityIt2007 @noldHeterogeneityDiseasetransmissionModeling1980 @trauerImportanceHeterogeneityEpidemiology2019 @zhangMonitoringRealtimeTransmission2022 @lloyd-smithSuperspreadingEffectIndividual2005.
+For example, when designing targeted interventions, it is crucial to understand and account for differences that may exist within populations @woolhouseHeterogeneitiesTransmissionInfectious1997 @wangHeterogeneousInterventionsReduce2021 @mcdonaldImpactIndividuallevelHeterogeneity2016.
+These differences can present in a variety of forms: heterogeneity in susceptibility, transmission, response to guidance, and treatment effects etc.; all of which affect the dynamics of an infectious disease @fletcherWhatHeterogeneityIt2007 @noldHeterogeneityDiseasetransmissionModeling1980 @woolhouseHeterogeneitiesTransmissionInfectious1997 @seveliusBarriersFacilitatorsEngagement2014 @tuschhoffDetectingQuantifyingHeterogeneity2023 @delaneyStrategiesAdoptedGay2022 @andersonQuantifyingIndividuallevelHeterogeneity2022 @macdonaldInfluenceHLASupertypes2000 @elieSourceIndividualHeterogeneity2022.
+While heterogeneity may exist on a continuous spectrum, it can be difficult to incorporate into analysis and interpretation, so individuals are often placed in discrete groups according to a characteristic that aims to represent the true differences @mossongSocialContactsMixing2008 @klepacContagionBBCFour2018 @daviesAgedependentEffectsTransmission2020 @haySerodynamicsPrimerSynthetic2024 @yangLifeCourseExposures2020.
 When examining optimal influenza vaccination policy in the United Kingdom, Baguelin et al. @baguelinAssessingOptimalTarget2013 classified individuals within one of seven age groups.
 Explicitly accounting for, and grouping, individuals by whether they inject drugs can help target interventions to reduce human immunodeficiency virus (HIV) and Hepatitis C Virus incidence @levittInfectiousDiseasesInjection2020.
 Similarly, epidemiological models have demonstrated the potential for HIV pre-exposure prophylaxis to reduce racial disparities in HIV incidence @jennessAddressingGapsHIV2019.
 Therefore, heterogeneity can be used to inform more complete theories of change, increasing intervention effectiveness @bryanBehaviouralScienceUnlikely2021
 
 When discretizing a population for the purposes of inclusion within a mechanistic model, three properties need to be defined: 1) the number of groups, 2) the size of the groups, and 3) the differences between the groups.
-Typically, as seen in the examples above, demographic data is used e.g., age, sex, race, ethnicity, socio-economic status, etc., often in conjunction with the contact patterns and rates @wangHeterogeneousInterventionsReduce2021@seveliusBarriersFacilitatorsEngagement2014@mossongSocialContactsMixing2008@daviesAgedependentEffectsTransmission2020@baguelinAssessingOptimalTarget2013@jennessAddressingGapsHIV2019@foxDisproportionateImpactsCOVID192023.
+Typically, as seen in the examples above, demographic data is used e.g., age, sex, race, ethnicity, socio-economic status, etc., often in conjunction with the contact patterns and rates @wangHeterogeneousInterventionsReduce2021 @seveliusBarriersFacilitatorsEngagement2014 @mossongSocialContactsMixing2008 @daviesAgedependentEffectsTransmission2020 @baguelinAssessingOptimalTarget2013 @jennessAddressingGapsHIV2019 @foxDisproportionateImpactsCOVID192023.
 There are several reasons for this: the data is widely available, and therefore can be applied almost universally; it is easily understandable; and there are clear demarcations of the groups, addressing properties 1) and 2).
 However, epidemiological models often aim to assess the effects of heterogeneity with respect to infection, e.g., "how does an individual’s risk tolerance affect their risk of infection for influenza?".
 When addressing questions such as these, demographic data does not necessarily provide a direct link between the discretization method and the heterogeneous nature of the exposure and outcome, particularly if behavioral mechanisms are a potential driver.
 Instead, it relies on assumptions and proxy measures e.g., an individual’s age approximates their contact rates, which in turn approximates their risk of transmission.
 This paper demonstrates an alternative approach to discretizing populations for use within mechanistic models, highlighting the benefits of an interdisciplinary approach to characterize heterogeneity in a manner more closely related to the risk of infection.
 
-In early 2020, shortly after the World Health Organization (WHO) declared the SARS-CoV-2 outbreak a public health emergency of international concern @worldhealthorganizationStatementSecondMeeting, universities across the United States began to close their campuses and accommodations, shifting to remote instruction @MapCoronavirusSchool2020@collegianTIMELINEPennState2021.
-By Fall 2020, academic institutions transitioned to a hybrid working environment (in-person and online), requiring students to return to campuses @adamsReturnUniversityCampuses2020@haddenWhatTop25@thenewyorktimesTrackingCoronavirusColleges2020.
+In early 2020, shortly after the World Health Organization (WHO) declared the SARS-CoV-2 outbreak a public health emergency of international concern @worldhealthorganizationStatementSecondMeeting, universities across the United States began to close their campuses and accommodations, shifting to remote instruction @MapCoronavirusSchool2020 @collegianTIMELINEPennState2021.
+By Fall 2020, academic institutions transitioned to a hybrid working environment (in-person and online), requiring students to return to campuses @adamsReturnUniversityCampuses2020 @haddenWhatTop25 @thenewyorktimesTrackingCoronavirusColleges2020.
 In a prior paper @arnoldLongitudinalStudyImpact2022 we documented the results of a large prospective serosurvey conducted in State College, home to The Pennsylvania State University (PSU) University Park (UP) campus.
 We examined the effect of 35,000 returning students (representing a nearly 20% increase in the county population @unitedstatescensusbureauCensusBureauQuickFacts2019) on the community infection rates, testing serum for the presence of anti-Spike Receptor Binding Domain (S/RBD) IgG, indicating prior exposure @longAntibodyResponsesSARSCoV22020.
-Despite widespread concern that campus re-openings would lead to substantial increases in surrounding community infections @adamsReturnUniversityCampuses2020@lopmanModelingStudyInform2021@benneyanCommunityCampusCOVID192021, very little sustained transmission was observed between the two geographically coincident populations @arnoldLongitudinalStudyImpact2022.
+Despite widespread concern that campus re-openings would lead to substantial increases in surrounding community infections @adamsReturnUniversityCampuses2020 @lopmanModelingStudyInform2021 @benneyanCommunityCampusCOVID192021, very little sustained transmission was observed between the two geographically coincident populations @arnoldLongitudinalStudyImpact2022.
 
 Given the high infection rate observed among the student body (30.4% seroprevalence), coupled with the substantial heterogeneity in infection rates between the two populations, we hypothesized that there may be further variation in exposure within the student body, resulting from behavioral heterogeneity.
 Despite extensive messaging campaigns conducted by the University @pennsylvaniastateuniversityMaskPack2021, it is unlikely that all students equally adhered to public health guidance regarding SARS-CoV-2 transmission prevention.
@@ -101,11 +101,11 @@ The behavioral survey collected responses on the Likert scale of: Never, Rarely,
 For all PHMs, Always and Most of the time accounted for \> 80% of responses (with the exception of intention to stay out of crowded places and avoid mass gatherings, where Always and Most of the time accounted for 78.8% of responses).
 To reduce the parameter space of the LCA and minimize overfitting, the behavioral responses were recoded as Always and Not Always.
 Measures of SARS-CoV-2 exposure e.g., IgG status, were not included in the LCA model fitting, as they reflect the outcome of interest.
-We focused on responses regarding intention to follow behaviors because this information can be feasibly collected during a public health campaign for a novel or emerging outbreak; it has also been shown that intentions are well-correlated with actual behaviors for coronavirus disease 2019 (COVID-19) public health guidelines, as well as actions that have short-term benefits @connerDoesIntentionStrength2024@mcdonaldRecallingIntendingEnact2017.
-We examined the latent class models using Bayesian Information Criterion, which is a commonly recommended as part of LCA model evaluation @wellerLatentClassAnalysis2020@nylund-gibsonTenFrequentlyAsked20181213, to select the model that represented the best balance between parsimony and maximal likelihood fit.
+We focused on responses regarding intention to follow behaviors because this information can be feasibly collected during a public health campaign for a novel or emerging outbreak; it has also been shown that intentions are well-correlated with actual behaviors for coronavirus disease 2019 (COVID-19) public health guidelines, as well as actions that have short-term benefits @connerDoesIntentionStrength2024 @mcdonaldRecallingIntendingEnact2017.
+We examined the latent class models using Bayesian Information Criterion, which is a commonly recommended as part of LCA model evaluation @wellerLatentClassAnalysis2020 @nylund-gibsonTenFrequentlyAsked20181213, to select the model that represented the best balance between parsimony and maximal likelihood fit.
 
 Using the best-fit LCA model, we performed multivariate logistic regression of modal class assignment against IgG seropositivity to assess the association between the latent classes and infection.
-This "three-step" approach is recommended over the "one-step" LCA model fit that includes the outcome of interest as a covariate in the LCA model @nylund-gibsonTenFrequentlyAsked20181213@bolckEstimatingLatentStructure2004a.
+This "three-step" approach is recommended over the "one-step" LCA model fit that includes the outcome of interest as a covariate in the LCA model @nylund-gibsonTenFrequentlyAsked20181213 @bolckEstimatingLatentStructure2004a.
 The following variables were determined a priori to be potential risk factors for exposure @arnoldLongitudinalStudyImpact2022: close proximity (6 feet or less) to an individual who tested positive for SARS-CoV-2; close proximity to an individual showing key COVID-19 symptoms (fever, cough, shortness of breath); lives in University housing; ate in a restaurant in the past 7 days; ate in a dining hall in the past 7 days; only ate in their room/apartment in the past 7 days; travelled in the 3 months prior to returning to campus; and travelled since returning to campus for the Fall term.
 Variables relating to attending gatherings were not included in the logistic regression due to overlap with intention variables of the initial LCA fit.
 Missing variables were deemed "Missing At Random" and imputed using the mice package @vanbuurenMiceMultivariateImputation2011, as described in the supplement of the previous paper @arnoldLongitudinalStudyImpact2022.
@@ -116,7 +116,7 @@ We parameterized a deterministic compartmental Susceptible-Infected-Recovered (S
 The recovery rate was set to 8 days.
 Diagonal values of the transmission matrix were constrained such that $beta_(H H) lt.eq beta_(M M) lt.eq beta_(L L)$ (#emph[H] represents high-adherence to public health guidelines, and #emph[M] and #emph[L] represent medium- and low-adherence, respectively), with the following parameters fit: the transmission matrix diagonals, a scaling factor for the off-diagonal values ($phi.alt$), and a scaling factor for the whole transmission matrix ($rho$).
 The off-diagonal values are equal to a within-group value (diagonal) multiplied by a scaling factor ($phi.alt$).
-This scaling factor can either multiply the within-group beta value of the source group (e.g., $beta_(H L) = phi.alt dot.op beta_(L L)$; Eq. 1A), or the recipient group (e.g., $beta_(L H) = phi.alt dot.op beta_(L L)$; Eq. 1B), each with a different interpretation.
+This scaling factor can either multiply the within-group beta value of the source group (e.g., $beta_(H L) = phi.alt dot.op beta_(L L)$; @eq-transmission-matrix\A), or the recipient group (e.g., $beta_(L H) = phi.alt dot.op beta_(L L)$; @eq-transmission-matrix\B), each with a different interpretation.
 
 #set math.equation(numbering: "1")
 #let boldred(x) = text(fill: rgb("#8B0000"), $bold(#x)$)
@@ -124,8 +124,8 @@ This scaling factor can either multiply the within-group beta value of the sourc
 $
 rho mat(
   beta_(H H), beta_(H M), beta_(H L) ;
-  beta_(M H), beta_(H M), beta_(M L) ;
-  beta_(L H), beta_(H M), beta_(L L) ;
+  beta_(M H), beta_(M M), beta_(M L) ;
+  beta_(L H), beta_(L M), beta_(L L) ;
 )
 &&arrow rho mat(
   beta_(H H), phi.alt beta_(M M), boldred(phi.alt beta_(L L)) ;
@@ -134,10 +134,11 @@ rho mat(
 ) &&#text[mixing structure] bold(A)\
 &&arrow rho mat(
   beta_(H H), phi.alt beta_(H H), phi.alt beta_(H H) ;
-  phi.alt beta_(M M), beta_(M M), beta_(M M) ;
+  phi.alt beta_(M M), beta_(M M), phi.alt beta_(M M) ;
   boldred(phi.alt beta_(L L)), boldred(phi.alt beta_(L L)), boldred(beta_(L L)) ;
 ) &&#text[mixing structure] bold(B)\
 $
+<eq-transmission-matrix>
 
 The former assumes that between-group transmission is dominated by the transmissibility of the source individuals, implying that adherence to the PHMs primarily prevents onwards transmission, rather than protecting against infection.
 The latter assumes that between-group transmission is dominated by the susceptibility of the recipient individuals, implying that adherence to the PHMs primarily prevents infection, rather than protecting against onwards transmission.
@@ -184,20 +185,21 @@ In this interdisciplinary analysis, we collected behavioral data from surveys an
 This approach allowed us to use LCA to categorize a population’s transmission potential with measures related to risk tolerance and behavior.
 The LCA model was fit without inclusion of infection status data, but class membership was correlated with IgG seroprevalence.
 The classes that were the most adherent to PHMs experienced the lowest infection rates, and the least adherent exhibited the highest seroprevalence.
-As the logistic model cannot account for indirect effects resulting from between-class interactions, a dynamical SIR model was parameterized to explore the effect of interventions of varying degrees of effectiveness.
+As the logistic model cannot account for indirect effects resulting from between-class interactions, we parameterized a dynamical SIR model to explore the effect of interventions of varying degrees of effectiveness.
 
 Although a four-class LCA model was a marginally better fit for the data, there were not substantial differences in class assignment relative to the three-class LCA model.
 The three-class model was selected for use in simulation for parsimony, requiring fewer assumptions and parameters to fit.
 Upon parametrizing the compartmental model, smaller ABC distance values were observed for moderate to high levels of between-group mixing, implying some degree of assortativity in our population, though the exact nature cannot be determined from our data.
 Examining the three classes, 38% of individuals already intended to always follow all PHMs.
 As a result, only 62% of the study population could have their risk reduced with respect to the PHMs surveyed.
-Further, the infection rates observed in the High Adherence group indicates that even a perfectly effective intervention aimed at increasing adherence to non-pharmaceutical PHMs (i.e., after the intervention, all individuals always followed every measure) would not eliminate transmission in a population, an observation that aligns with prior COVID-19 research @flaxmanEstimatingEffectsNonpharmaceutical2020a@banholzerEstimatingEffectsNonpharmaceutical2021@braunerInferringEffectivenessGovernment2021@geUntanglingChangingImpact2022.
+Further, the infection rates observed in the High Adherence group indicates that even a perfectly effective intervention aimed at increasing adherence to non-pharmaceutical PHMs (i.e., after the intervention, all individuals always followed every measure) would not eliminate transmission in a population, an observation that aligns with prior COVID-19 research @flaxmanEstimatingEffectsNonpharmaceutical2020a @banholzerEstimatingEffectsNonpharmaceutical2021 @braunerInferringEffectivenessGovernment2021 @geUntanglingChangingImpact2022.
 The extent to which the infection in the High Adherence group is a result of mixing with lower adherence classes cannot be explicitly described, but the sensitivity analysis allows for an exploration of the effect and ABC fits suggest low-moderate levels of between-groups mixing occurred.
 Varying the structure of the transmission matrix yielded very similar quantitative and qualitative results (@fig-abc-distance-whiskers-rows, @fig-intervention-rows, @fig-abc-distance-whiskers-constant, @fig-intervention-constant).
 
 Examining the impact of increasing adherence to PHMs (modeled as increasing the proportion of the population in the High Adherence class), a fully effective intervention saw between a 77-96% reduction in the final size of the simulation outbreak.
-The small but appreciable dependence of the reduction’s magnitude on the degree of between-group mixing can be explained as such.
+We note that the effect at a fully effective intervention is conceptually analogous the population attributable fraction (PAF) proposed by @brooks-pollockDefiningPopulationAttributable2017; though rather than quantifying the impact of removing one risk group, as in @brooks-pollockDefiningPopulationAttributable2017, we consider the impact of all individuals moving to the low-risk group.
 Each set of simulations for a given degree of assortativity has a different associated set of parameter values for the transmission matrix.
+The difference in the magnitude of the achievable reduction at a given level of intervention for the different assortativity levels is attributed to the difference in the corresponding fitted parameters (@tbl-beta-params-cols, @tbl-beta-params-rows, @tbl-beta-params-constant).
 With higher levels of between-group mixing, the initial SIR parameterization generally results in lower transmission parameters for the High-High adherence interactions, as more infections in the High Adherence group originate from interactions with Low and Medium Adherence individuals.
 Increasing adherence, therefore, results in a greater reduction of the overall transmission rate than in simulations with less assortativity.
 
