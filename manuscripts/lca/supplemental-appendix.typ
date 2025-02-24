@@ -22,7 +22,7 @@
       affiliation: ("CIDD", "Huck"),
     ),
     "Suresh V. Kuchipudi": (
-      affiliation: ("CIDD","PSU-Vet"),
+      affiliation: ("Pitt-ID"),
     ),
     "Vivek Kapur": (
       affiliation: ("CIDD","Huck", "PSU-Animal-Sci"),
@@ -38,7 +38,7 @@
     "PSU-HHD": "College of Health and Human Development, Pennsylvania State University, University Park, PA, USA 16802",
     "PSU-SSRI": "Social Science Research Institute, Pennsylvania State University, University Park, PA, USA 16802",
     "Huck": "Huck Institutes of the Life Sciences, Pennsylvania State University, University Park, PA, USA 16802",
-    "PSU-Vet": "Department of Veterinary and Biomedical Sciences, Pennsylvania State University, University Park, PA, USA 16802",
+    "Pitt-ID": "Department of Infectious Diseases and Microbiology, School of Public Health, University of Pittsburgh, Pittsburgh, PA, USA",
     "PSU-Animal-Sci": "Department of Animal Science, Pennsylvania State University, University Park, PA, USA 16802"
   ),
   keywords: ("Latent Class Analysis","SIR Model","Approximate Bayesian Computation","Behavioral Survey","IgG Serosurvey"),
