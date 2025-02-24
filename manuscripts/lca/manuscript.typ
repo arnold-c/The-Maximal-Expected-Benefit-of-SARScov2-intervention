@@ -113,7 +113,7 @@ To examine the effect of modal class assignment, we computed the GLM results of 
 The percentage of simulations where class membership p-values $lt.eq$ 0.05 were computed, and the mice package was used to produce pooled odds ratios and associated 95% confidence intervals.
 
 We parameterized a deterministic compartmental Susceptible-Infected-Recovered (SIR) model using approximate Bayesian computation (ABC) against the seroprevalence within each latent class.
-The recovery rate was set to 8 days.
+The recovery rate was set to 8 days (@tbl-sir-parameters).
 Diagonal values of the transmission matrix were constrained such that $beta_(H H) lt.eq beta_(M M) lt.eq beta_(L L)$ (#emph[H] represents high-adherence to public health guidelines, and #emph[M] and #emph[L] represent medium- and low-adherence, respectively), with the following parameters fit: the transmission matrix diagonals, a scaling factor for the off-diagonal values ($phi.alt$), and a scaling factor for the whole transmission matrix ($rho$).
 The off-diagonal values are equal to a within-group value (diagonal) multiplied by a scaling factor ($phi.alt$).
 This scaling factor can either multiply the within-group beta value of the source group (e.g., $beta_(H L) = phi.alt dot.op beta_(L L)$; @eq-transmission-matrix\A), or the recipient group (e.g., $beta_(L H) = phi.alt dot.op beta_(L L)$; @eq-transmission-matrix\B), each with a different interpretation.
@@ -177,7 +177,7 @@ When class assignment was determined probabilistically, similar relationships we
 
 == Compartmental Model
 The ABC distance distributions indicated that near-homogeneous levels of between-group mixing better fit the data (@fig-abc-distance-whiskers).
-After model parameterization (@tbl-beta-params-cols, @tbl-beta-params-rows, @tbl-beta-params-constant), we examined the effect of increasing adherence to public health guidance.
+After model parameterization (@tbl-sir-parameters, @tbl-beta-params-cols, @tbl-beta-params-rows, @tbl-beta-params-constant), we examined the effect of increasing adherence to public health guidance.
 Moving all individuals into the High Adherence class resulted in a 77-96% reduction in final size; when low-moderate between-group mixing is simulated, a fully effective intervention results in approximately 96% (95th percentiles: 88-99%) reduction in final seroprevalence, and when between-group mixing is as likely as within-group mixing, a 89% (95th percentiles: 34-99%) reduction is observed (@fig-intervention).
 
 = Discussion
