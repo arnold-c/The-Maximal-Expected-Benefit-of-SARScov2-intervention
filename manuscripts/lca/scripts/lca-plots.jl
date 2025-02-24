@@ -1,8 +1,8 @@
 #%%
 using DrWatson
-@quickactivate "Data4Action"
+@quickactivate "D4A"
 
-using Data4Action
+using D4A
 using Data4ActionUtils: Data4ActionUtils
 using CairoMakie
 
