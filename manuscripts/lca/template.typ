@@ -116,8 +116,10 @@
     // to show superscript labels of affiliations for each author.
     #let inst_keys = affiliations.keys()
 
+    #let corresponding = state("x", "")
+    #let equal_contributor = state("y", "")
     // Authors' block
-    #block([
+    // #block([
       // Process the text for each author one by one
       #for (ai, au) in authors.keys().enumerate() {
         let au_meta = authors.at(au)
@@ -153,28 +155,32 @@
 
         // Corresponding author
         if au_meta.keys().contains("corresponding") and (au_meta.corresponding == "true" or au_meta.corresponding == true) {
-          [#super[,]#footnote(numbering: "*")[
-            Corresponding author. #au_name. Address:
-            #if not au_meta.keys().contains("address") or au_meta.address == "" {
-              [#au_inst_primary.]
-            }
-            #if au_meta.keys().contains("email") {
-              [Email: #link("mailto:" + au_meta.email.replace("\\", "")).]
-            }
-          ]]
+          [#super[,]\*]
+          corresponding.update([
+            Corresponding author: #au_name.
+            Address:
+              #if not au_meta.keys().contains("address") or au_meta.address == "" {
+                [#au_inst_primary.]
+              }
+              #if au_meta.keys().contains("email") {
+                [Email: #link("mailto:" + au_meta.email.replace("\\", "")).]
+              }
+          ])
         }
 
         if au_meta.keys().contains("equal-contributor") and (au_meta.equal-contributor == "true" or au_meta.equal-contributor == true){
+          [#super[,#sym.dagger]]
           if ai == 0 {
-            [#super[,]#footnote(numbering: "*")[Equal contributors.]<ec_footnote>]
+          equal_contributor.update([Equal contributors])
           } else {
-            [#super[,]#footnote(numbering: "*", <ec_footnote>)]
           }
         }
       }
-    ])
+    // ])
 
     #v(1em)
+
+    #context assert(corresponding.get() != "")
 
     // Affiliation block
     #align(left)[#block([
@@ -182,6 +188,12 @@
       #for (ik, key) in inst_keys.enumerate() {
         text(size: 0.8em, [#super([#(ik+1)]) #(affiliations.at(key))])
         linebreak()
+      }
+      #linebreak()
+      #text(size: 0.8em)[\* #context corresponding.get()]
+      #context if equal_contributor.get() != "" {
+        linebreak()
+        text(size: 0.8em)[#sym.dagger #context equal_contributor.get()]
       }
     ])]
   ]

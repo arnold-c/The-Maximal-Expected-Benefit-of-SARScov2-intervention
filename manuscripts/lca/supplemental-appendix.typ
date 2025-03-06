@@ -1,8 +1,7 @@
 #import "./template.typ": *
 
 #show: article.with(
-  title: "The Maximal Expected Benefit of SARS-CoV-2 Interventions Among University Students: A Simulation Study Using Latent Class Analysis",
-  header-title: "The Maximal Expected Benefit of SARS-CoV-2 Interventions Among University Students",
+  title: "Latent Class Analysis Identifies Risk Groups to Model the Expected Benefits of SARS-CoV-2 Interventions Among University Students",
   authors: (
     "Callum R.K. Arnold": (
       affiliation: ("PSU-Bio", "CIDD"),
